@@ -121,6 +121,10 @@ A more exhaustive search using grid search or random search might help identify 
 **Compare multiple pre-trained backbones.**  
 Only MobileNetV2 was explored here and it would be valuable to compare it against other architectures such as EfficientNetB0.
 
+
+**Use a backbone pre-trained on art data.**
+MobileNetV2 was pre-trained on ImageNet, a dataset of natural photographs and a backbone pre-trained on a large art dataset could provide a stronger starting point for this task.
+
 **Explore more systematic fine-tuning strategies.**  
 Future experiments could compare different unfreezing depths, keep BatchNorm layers frozen or use discriminative learning rates across layers.
 
