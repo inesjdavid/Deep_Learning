@@ -102,6 +102,10 @@ This project highlights the limitations of training CNNs from scratch on complex
 - Regularization alone was not sufficient to achieve strong generalization in this setting
 - Transfer learning produced a substantial improvement, showing that pre-trained features generalize well even to artistic domains
 - Fine-tuning the upper layers of MobileNetV2 yielded the best performance, reaching ~59% test accuracy
+
+
+![PR Curve](images/precision_recall_curve.png)
+
 - Precision-Recall analysis confirmed that Japanese Art and Primitivism are the most reliably predicted classes, while Realism and Baroque show steeper precision drops at higher recall levels.
 
 These results suggest that for tasks defined by abstract visual properties, leveraging pre-trained representations is significantly more effective than learning from scratch.
